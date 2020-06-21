@@ -1,6 +1,6 @@
 body {
     background: #fff;
-    background-image: url("https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("https://images.unsplash.com/photo-1563207153-f403bf289096?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -8,11 +8,11 @@ body {
   }
   
   h1 {
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 500;
     border: 3px solid #fff;
     padding: 10px 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   
   .flex {
