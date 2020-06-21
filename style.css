@@ -13,7 +13,7 @@ h1  {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 15px;
-    color: blueviolet;
+    color: midnightblue;
 }
 .chat   {
     width: 400px;
@@ -40,15 +40,15 @@ h1  {
 .messages div   {
     max-width: 60%;
     display: block;
-    margin: 6px;
-    padding: 12px;
-    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
 }
 .messages .bot  {
     text-align: left;
     margin-right: auto;
     background: #1473d1;
-    color: beige;
+    color: white;
 }
 .messages .self {
     text-align: right;
