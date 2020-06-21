@@ -1,22 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justfemi Chatbot</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<title>HNG Chatbot</title>
+<link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-    <h1>Justfemi Chatbot</h1>
-    <div class="chat">
-        <div class="messages">
-        </div>
-        <div id="edge"></div>
-        <form class="actions">
-            <input type="text" placeholder="Press 'Enter' to send..">
-        </form>
-    </div>
-    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
-    <script src="script.js"></script>
-</body>
+
+
+ <div class="flex">
+  <div>
+    <h1>MyBot</h1>
+  </div>
+  <div id="result">
+  </div>
+  <div class="input">
+  <input type="text" id="ans" placeholder="Enter your response" required/>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+let questions = [
+  "Hey Rockstar! I'm Aproko...What's your name?",
+  "Where are you from?",
+  "How old are you?",
+  "What track are you on?",
+  "It was nice talking with you. Till next time!"
+];
+
+let num = 0;
+let output = document.querySelector("#result");
+output.innerHTML = questions[0];
+let inputBox = document.querySelector("#ans");
+
+function changeQuestion() {
+  inputBox.setAttribute("placeholder", "Enter your response");
+  output.innerHTML = questions[num];
+  if(num == 4) {
+    inputBox.setAttribute("placeholder", "");
+    inputBox.style.display == "none";
+  }
+}
+
+function showResponse() {
+  let input = inputBox.value;
+  if(inputBox.value == "") { } 
+  else {
+    if(num == 0 ) {
+      output.innerHTML = `Hello ${input}, nice to meet you. I'm curious...`
+      inputBox.value = "";
+      inputBox.setAttribute("placeholder", "Please wait...");
+      ++num;
+      setTimeout(changeQuestion, 3000);
+    } else if (num == 1 ) {
+      output.innerHTML = `${input} is a really cool place!`;
+      inputBox.value = "";
+      inputBox.setAttribute("placeholder", "Please wait...");
+      ++num;
+      setTimeout(changeQuestion, 3000);
+    } else if (num == 2 ) {
+      output.innerHTML = `It means your were born in ${2020 - input}, how cool. I was born literally some minutes ago`;
+      inputBox.value = "";
+      inputBox.setAttribute("placeholder", "Please wait...");
+      ++num;
+      setTimeout(changeQuestion, 7000);
+    } else if (num == 3 ) {
+      output.innerHTML = `${input} is an interesting track. I'm an aspiring AI, lol`;
+      inputBox.value = "";
+      inputBox.setAttribute("placeholder", "Please wait...");
+      ++num;
+      setTimeout(changeQuestion, 3000);
+    }
+  }
+}
+
+inputBox.addEventListener("keypress", function(e) {
+  if(e.which == 13) {
+    showResponse()
+  }
+})
+</script>
 </html>
