@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>HNG Chatbot</title>
+<title>My Chatbot</title>
 <link rel="stylesheet" href="style.css">
 
 </head>
@@ -8,7 +8,7 @@
 
  <div class="flex">
   <div>
-    <h1>MyBot</h1>
+    <h1>Bot</h1>
   </div>
   <div id="result">
   </div>
@@ -51,25 +51,25 @@ function showResponse() {
       inputBox.value = "";
       inputBox.setAttribute("placeholder", "Please wait...");
       ++num;
-      setTimeout(changeQuestion, 3000);
+      setTimeout(changeQuestion, 2000);
     } else if (num == 1 ) {
       output.innerHTML = `${input} is a really cool place!`;
       inputBox.value = "";
       inputBox.setAttribute("placeholder", "Please wait...");
       ++num;
-      setTimeout(changeQuestion, 3000);
+      setTimeout(changeQuestion, 2000);
     } else if (num == 2 ) {
       output.innerHTML = `It means your were born in ${2020 - input}, how cool. I was born literally some minutes ago`;
       inputBox.value = "";
       inputBox.setAttribute("placeholder", "Please wait...");
       ++num;
-      setTimeout(changeQuestion, 7000);
+      setTimeout(changeQuestion, 2000);
     } else if (num == 3 ) {
       output.innerHTML = `${input} is an interesting track. I'm an aspiring AI, lol`;
       inputBox.value = "";
       inputBox.setAttribute("placeholder", "Please wait...");
       ++num;
-      setTimeout(changeQuestion, 3000);
+      setTimeout(changeQuestion, 1000);
     }
   }
 }
