@@ -21,11 +21,11 @@
 
 <script type="text/javascript">
 let questions = [
-  "Hey fam! I'm a Bot...What's your name?",
-  "Where are you from?",
-  "How old are you?",
-  "What track are you on?",
-  "It was nice talking with you. Till next time!"
+  "Hey! I be Bot...Wetin be your name?",
+  "Where you come from?",
+  "How old you be?",
+  "Which track you dey?",
+  "Okay na. We go dey see next time!"
 ];
 
 let num = 0;
@@ -47,25 +47,25 @@ function showResponse() {
   if(inputBox.value == "") { } 
   else {
     if(num == 0 ) {
-      output.innerHTML = `Hello ${input}, nice to meet you. I'm curious...`
+      output.innerHTML = `How far ${input}, nice to meet you. I wan ask you something...`
       inputBox.value = "";
       inputBox.setAttribute("placeholder", "Please wait...");
       ++num;
-      setTimeout(changeQuestion, 2000);
+      setTimeout(changeQuestion, 4000);
     } else if (num == 1 ) {
-      output.innerHTML = `${input} is a really cool place!`;
+      output.innerHTML = `${input} na cool place o!`;
       inputBox.value = "";
       inputBox.setAttribute("placeholder", "Please wait...");
       ++num;
-      setTimeout(changeQuestion, 2000);
+      setTimeout(changeQuestion, 4000);
     } else if (num == 2 ) {
-      output.innerHTML = `It means your were born in ${2020 - input}, how cool. I was born literally some minutes ago`;
+      output.innerHTML = `So dem born you for ${2020 - input}, you don old o. Dem just born me some minutes ago`;
       inputBox.value = "";
       inputBox.setAttribute("placeholder", "Please wait...");
       ++num;
-      setTimeout(changeQuestion, 2000);
+      setTimeout(changeQuestion, 4000);
     } else if (num == 3 ) {
-      output.innerHTML = `${input} is an interesting track. I'm an aspiring AI, lol`;
+      output.innerHTML = `${input} make sense. I be aspiring AI, lol`;
       inputBox.value = "";
       inputBox.setAttribute("placeholder", "Please wait...");
       ++num;
