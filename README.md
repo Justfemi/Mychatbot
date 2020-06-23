@@ -1,2 +1,2 @@
 # Preview
-justfemi.github.io/mychatbot
+https://justfemi.github.io/Mychatbot/
