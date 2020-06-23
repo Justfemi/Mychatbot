@@ -1,3 +1,2 @@
-# Mychatbot
-Preview
+# Preview
 justfemi.github.io/mychatbot
